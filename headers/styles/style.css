@@ -24,17 +24,9 @@ nav a {
 }
 
 nav #current_page {
-    border-radius: 10px;
-    outline-style: solid;
-    outline-width: 3px;
-    outline-color: black;
+    border-radius: 10px 10px 0 0;
+    box-shadow: 0 3px 0 #000 inset,
+                3px 0 0 #000 inset,
+                -3px 0 0 #000 inset;
     margin-top: 3px;
-}
-
-#white_box1 {
-    background-color: white;
-    width: 100%;
-    height: 100px;
-    position: absolute;
-    transform: translate(0px, 0px);
 }
