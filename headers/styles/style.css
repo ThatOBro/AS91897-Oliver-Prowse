@@ -3,7 +3,7 @@ body {
 }
 
 #container {
-    width: 70%;
+    width: 80%;
     height: fit-content;
     margin: 0 auto;
     font-family: Arial, Helvetica, sans-serif;
@@ -17,10 +17,12 @@ nav {
 nav a {
     width: 33.33%;
     text-align: center;
-    font-size: 1.5em;
+    font-size: 2em;
     text-decoration: none;
     color: black;
     margin: 0 0 0 0;
+    padding: 10px 0 10px 0;
+    box-shadow: 0 -3px 0 #000 inset;
 }
 
 nav #current_page {
@@ -28,5 +30,5 @@ nav #current_page {
     box-shadow: 0 3px 0 #000 inset,
                 3px 0 0 #000 inset,
                 -3px 0 0 #000 inset;
-    margin-top: 3px;
+    margin-top: 0px;
 }
