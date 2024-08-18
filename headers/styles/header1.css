@@ -3,12 +3,13 @@ body {
 }
 
 #container {
-    width: 80%;
+    width: 1500px;
     height: fit-content;
     margin: 0 auto;
     font-family: Arial, Helvetica, sans-serif;
     box-shadow: 0px 0px 3px #ddd;
     border-radius: 10px;
+    padding-bottom: 30px;
 }
 
 nav {
@@ -33,7 +34,7 @@ nav::before {
   height: 30px;
   position: absolute;
   top: 45px;
-  right: 187px;
+  right: 105px;
   box-shadow: 2px -4px 3px #ddd inset;
 }
 
@@ -46,6 +47,49 @@ nav::before {
 img {
     width: 100px;
     float: left;
+    margin: 20px 0 20px 20px;
+}
+
+/* From Uiverse.io by Nilsobn */ 
+.radio-inputs {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 4px;
+  background-color: #eee;
+  box-sizing: border-box;
+  padding: 0.25rem;
+  width: 250px;
+  font-size: 14px;
+  height: 40px;
+  float: left;
+  margin: 30px 50px 0 1000px;
+}
+
+.radio-inputs .radio {
+  flex: 1 1 auto;
+  text-align: center;
+}
+
+.radio-inputs .radio input {
+  display: none;
+}
+
+.radio-inputs .radio .name {
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  border: none;
+  padding: 0.5rem 0;
+  color: rgba(51, 65, 85, 1);
+  transition: all 0.15s ease-in-out;
+}
+
+.radio-inputs .radio input:checked + .name {
+  background-color: #fff;
+  font-weight: 600;
 }
 
 /* From Uiverse.io by vinodjangid07 */ 
@@ -65,6 +109,7 @@ img {
     justify-content: center;
     gap: 10px;
     transition-duration: .5s;
+    margin-top: 20px;
   }
   
   .bars {
