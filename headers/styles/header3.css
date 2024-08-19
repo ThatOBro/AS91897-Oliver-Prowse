@@ -4,10 +4,11 @@ body {
 
 #container {
     width: 1500px;
-    height: fit-content;
+    height: 142px;
     margin: 0 auto;
     font-family: Arial, Helvetica, sans-serif;
     box-shadow: 0px 0px 3px #ddd;
+    color: rgba(51, 65, 85, 1);
     border-radius: 10px;
     padding-bottom: 30px;
 }
@@ -16,6 +17,8 @@ nav {
     display: flex;
     justify-content: space-evenly;
     margin-top: 20px;
+    background-color: #eee;
+    border-radius: 10px 10px 0 0;
 }
 
 nav a {
@@ -23,25 +26,30 @@ nav a {
     text-align: center;
     font-size: 2em;
     text-decoration: none;
-    color: black;
     margin: 0 0 0 0;
     padding: 10px 0 10px 0;
+    background-color: #eee;
+    color: rgba(51, 65, 85, 1);
+    border-radius:  10px;
 }
 
 nav::before {
   content: "";
-  width: 999px;
-  height: 30px;
   position: absolute;
-  top: 45px;
-  right: 106px;
-  box-shadow: 2px -4px 3px #ddd inset;
+  top: 57px;
+  left: 605px;
+  height: 20px;
+  width: 20px;
+  border-radius: 0 0 0 10px;
+  background-color: #eee;
+  box-shadow: -5px 5px 0px #fff;
 }
 
 #current_page {
     border-radius: 10px 10px 0 0;
-    box-shadow: 4px -4px 3px #ddd;
     margin-top: 0px;
+    background-color: #fff;
+    font-weight: 600;
 }
 
 img {
@@ -50,46 +58,95 @@ img {
     margin: 20px 0 20px 20px;
 }
 
-/* From Uiverse.io by Nilsobn */ 
-.radio-inputs {
+/* From Uiverse.io by gharsh11032000 */ 
+.animated-button {
+  float: left;
+  margin: 37px 0 0 50px;
   position: relative;
   display: flex;
-  flex-wrap: wrap;
-  border-radius: 10px;
-  background-color: #eee;
-  box-sizing: border-box;
-  padding: 0.25rem;
-  width: 250px;
-  font-size: 14px;
-  height: 40px;
-  float: left;
-  margin: 30px 50px 0 1000px;
-}
-
-.radio-inputs .radio {
-  flex: 1 1 auto;
-  text-align: center;
-}
-
-.radio-inputs .radio input {
-  display: none;
-}
-
-.radio-inputs .radio .name {
-  display: flex;
-  cursor: pointer;
   align-items: center;
-  justify-content: center;
-  border-radius: 10px;
-  border: none;
-  padding: 0.5rem 0;
-  color: rgba(51, 65, 85, 1);
-  transition: all 0.15s ease-in-out;
+  gap: 4px;
+  padding: 12px 36px;
+  border: 0px solid;
+  border-color: transparent;
+  font-size: 14px;
+  background-color: inherit;
+  border-radius: 100px;
+  font-weight: 600;
+  color: #1E8E96;
+  box-shadow: 0 0 0 2px #1E8E96;
+  cursor: pointer;
+  overflow: hidden;
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
 }
 
-.radio-inputs .radio input:checked + .name {
-  background-color: #fff;
-  font-weight: 600;
+.animated-button svg {
+  position: absolute;
+  width: 24px;
+  fill: #1E8E96;
+  z-index: 9;
+  transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.animated-button .arr-1 {
+  right: 16px;
+}
+
+.animated-button .arr-2 {
+  left: -25%;
+}
+
+.animated-button .circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 20px;
+  height: 20px;
+  background-color: #eee;
+  border-radius: 10px;
+  opacity: 0;
+  transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.animated-button .text {
+  position: relative;
+  z-index: 1;
+  transform: translateX(-12px);
+  transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.animated-button:hover {
+  box-shadow: 0 0 0 12px transparent;
+  color: rgba(51, 65, 85, 1);
+  border-radius: 12px;
+}
+
+.animated-button:hover .arr-1 {
+  right: -25%;
+}
+
+.animated-button:hover .arr-2 {
+  left: 16px;
+}
+
+.animated-button:hover .text {
+  transform: translateX(12px);
+}
+
+.animated-button:hover svg {
+  fill: rgba(51, 65, 85, 1);
+}
+
+.animated-button:active {
+  scale: 0.97;
+  box-shadow: 0 0 0 4px #1E8E96;
+}
+
+.animated-button:hover .circle {
+  width: 220px;
+  height: 220px;
+  opacity: 1;
 }
 
 /* From Uiverse.io by Nilsobn */ 
@@ -105,7 +162,7 @@ img {
   font-size: 14px;
   height: 40px;
   float: left;
-  margin: 38px 50px 0 980px;
+  margin: 38px 0 0 723px;
 }
 
 .radio-inputs .radio {
