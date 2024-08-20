@@ -8,7 +8,6 @@ body {
     margin: 0 auto;
     font-family: Arial, Helvetica, sans-serif;
     box-shadow: 0px 0px 3px #ddd;
-    color: rgba(51, 65, 85, 1);
     border-radius: 10px;
     padding-bottom: 30px;
 }
@@ -17,8 +16,6 @@ nav {
     display: flex;
     justify-content: space-evenly;
     margin-top: 20px;
-    background-color: #eee;
-    border-radius: 10px 10px 0 0;
 }
 
 nav a {
@@ -26,36 +23,73 @@ nav a {
     text-align: center;
     font-size: 2em;
     text-decoration: none;
+    color: black;
     margin: 0 0 0 0;
     padding: 10px 0 10px 0;
-    background-color: #eee;
-    color: rgba(51, 65, 85, 1);
-    border-radius:  10px;
 }
 
 nav::before {
   content: "";
+  width: 999px;
+  height: 30px;
   position: absolute;
-  top: 57px;
-  left: 706px;
-  height: 20px;
-  width: 20px;
-  border-radius: 0 0 0 10px;
-  background-color: #eee;
-  box-shadow: -5px 5px 0px #fff;
+  top: 45px;
+  right: 206px;
+  box-shadow: 2px -4px 3px #ddd inset;
 }
 
 #current_page {
     border-radius: 10px 10px 0 0;
+    box-shadow: 4px -4px 3px #ddd;
     margin-top: 0px;
-    background-color: #fff;
-    font-weight: 600;
 }
 
 img {
     width: 100px;
     float: left;
     margin: 20px 0 20px 20px;
+}
+
+/* From Uiverse.io by Nilsobn */ 
+.radio-inputs {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 10px;
+  background-color: #eee;
+  box-sizing: border-box;
+  padding: 0.25rem;
+  width: 250px;
+  font-size: 14px;
+  height: 40px;
+  float: left;
+  margin: 30px 50px 0 1000px;
+}
+
+.radio-inputs .radio {
+  flex: 1 1 auto;
+  text-align: center;
+}
+
+.radio-inputs .radio input {
+  display: none;
+}
+
+.radio-inputs .radio .name {
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  border: none;
+  padding: 0.5rem 0;
+  color: rgba(51, 65, 85, 1);
+  transition: all 0.15s ease-in-out;
+}
+
+.radio-inputs .radio input:checked + .name {
+  background-color: #fff;
+  font-weight: 600;
 }
 
 /* From Uiverse.io by Nilsobn */ 
