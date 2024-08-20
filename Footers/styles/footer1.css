@@ -9,5 +9,11 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     box-shadow: 0px 0px 3px #ddd;
     border-radius: 10px;
-    padding-bottom: 30px;
+}
+
+footer {
+    height: fit-content;
+    background-color: #eee;
+    border-radius: 0 0 10px 10px;
+    margin: 900px;
 }
