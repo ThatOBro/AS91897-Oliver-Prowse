@@ -3,11 +3,146 @@ body {
 }
 
 #container {
-    width: 1500px;
+    width: 80%;
     height: fit-content;
     margin: 0 auto;
     font-family: Arial, Helvetica, sans-serif;
     box-shadow: 0px 0px 3px #ddd;
-    border-radius: 10px;
-    padding-bottom: 30px;
+    border-radius: 0 0 10px 10px;
 }
+
+#footer_img {
+    object-fit: cover;
+    width: 100%;
+    transform: translate(0%, -10%);
+    opacity: 60%;
+}
+
+footer {
+    height: 150px;
+    background-color: #000;
+    border-radius: 0 0 10px 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+footer p {
+    color: #ddd;
+    font-size: 14px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 5px;
+    width: fit-content;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+footer #contact {
+    transform: translate(-50%, -20%);
+}
+
+footer #copyright {
+    transform: translate(-50%, 170%);
+}
+
+footer h2 {
+    color: #ddd;
+    width: 80%;
+    font-size: 16px;
+    text-align: center;
+    padding: 5px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -250%);
+}
+
+/* From Uiverse.io by gharsh11032000 */ 
+.animated-button {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    padding: 12px 36px;
+    border: 0px solid;
+    border-color: transparent;
+    font-size: 14px;
+    background-color: inherit;
+    border-radius: 100px;
+    font-weight: 600;
+    color: #1E8E96;
+    box-shadow: 0 0 0 2px #1E8E96;
+    cursor: pointer;
+    overflow: hidden;
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  
+  .animated-button svg {
+    position: absolute;
+    width: 24px;
+    fill: #1E8E96;
+    z-index: 9;
+    transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  
+  .animated-button .arr-1 {
+    right: 16px;
+  }
+  
+  .animated-button .arr-2 {
+    left: -25%;
+  }
+  
+  .animated-button .circle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 20px;
+    height: 20px;
+    background-color: #eee;
+    border-radius: 10px;
+    opacity: 0;
+    transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  
+  .animated-button .text {
+    position: relative;
+    z-index: 1;
+    transform: translateX(-12px);
+    transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  
+  .animated-button:hover {
+    box-shadow: 0 0 0 12px transparent;
+    color: rgba(51, 65, 85, 1);
+    border-radius: 12px;
+  }
+  
+  .animated-button:hover .arr-1 {
+    right: -25%;
+  }
+  
+  .animated-button:hover .arr-2 {
+    left: 16px;
+  }
+  
+  .animated-button:hover .text {
+    transform: translateX(12px);
+  }
+  
+  .animated-button:hover svg {
+    fill: rgba(51, 65, 85, 1);
+  }
+  
+  .animated-button:active {
+    scale: 0.97;
+    box-shadow: 0 0 0 4px #1E8E96;
+  }
+  
+  .animated-button:hover .circle {
+    width: 220px;
+    height: 220px;
+    opacity: 1;
+  }
