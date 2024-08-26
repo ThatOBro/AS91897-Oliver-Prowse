@@ -13,12 +13,13 @@ body {
 
 #footer_img {
     object-fit: cover;
-    width: 100%;
-    transform: translate(0%, -10%);
-    opacity: 60%;
+    width: 120%;
+    transform: translate(-10%, -50%);
+    opacity: 40%;
 }
 
 footer {
+    grid-template-columns: auto auto auto;
     height: 150px;
     background-color: #000;
     border-radius: 0 0 10px 10px;
@@ -38,10 +39,6 @@ footer p {
     left: 50%;
 }
 
-footer #contact {
-    transform: translate(-50%, -20%);
-}
-
 footer #copyright {
     transform: translate(-50%, 170%);
 }
@@ -58,8 +55,21 @@ footer h2 {
     transform: translate(-50%, -250%);
 }
 
+#button-1 {
+    top: 50%;
+    left: 50%;
+    transform: translate(20%, -30%);
+}
+
+#button-2 {
+    top: 50%;
+    left: 50%;
+    transform: translate(-120%, -130%);
+}
+
 /* From Uiverse.io by gharsh11032000 */ 
 .animated-button {
+    z-index: 1000;
     position: relative;
     display: flex;
     align-items: center;
