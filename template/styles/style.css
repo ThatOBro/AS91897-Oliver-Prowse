@@ -89,6 +89,10 @@ img {
   margin: 0px;
 }
 
+#title a {
+  text-decoration: none;
+}
+
 #title h3 {
   font-weight: 50;
   font-size: 1em;
@@ -196,6 +200,10 @@ footer h2 {
   transform: translate(-50%, 0%);
 }
 
+footer a {
+  text-decoration: none;
+}
+
 #button-1 {
   top: 50%;
   left: 50%;
@@ -227,6 +235,7 @@ footer h2 {
   cursor: pointer;
   overflow: hidden;
   transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+  width: 77.05px;
 }
 
 .animated-button svg {
@@ -268,7 +277,7 @@ footer h2 {
 .animated-button:hover {
   box-shadow: 0 0 0 12px transparent;
   color: rgba(51, 65, 85, 1);
-  border-radius: 12px;
+  border-radius: 10px;
 }
 
 .animated-button:hover .arr-1 {
@@ -288,7 +297,6 @@ footer h2 {
 }
 
 .animated-button:active {
-  scale: 0.97%;
   box-shadow: 0 0 0 4px #1E8E96;
 }
 
