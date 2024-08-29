@@ -1,4 +1,3 @@
-// Define the text content for both languages
 const translations = {
     en: {
         page1: "Home Page",
@@ -18,9 +17,7 @@ const translations = {
     }
 };
 
-// Function to switch language based on the user's choice
 function switchLanguage(language) {
-    // Update the text content for the relevant elements
     document.querySelector('.page1').textContent = translations[language].page1;
     document.querySelector('.page2').textContent = translations[language].page2;
     document.querySelector('.page3').textContent = translations[language].page3;
@@ -28,11 +25,9 @@ function switchLanguage(language) {
     document.querySelector('#button-1 .text').textContent = translations[language].contactUs;
     document.querySelector('#button-2 .text').textContent = translations[language].sourceInfo;
 
-    // Save the language choice to localStorage
     localStorage.setItem("language", language);
 }
 
-// Function to set the radio input based on the saved language preference
 function setRadioInput(language) {
     const radioInputs = document.querySelectorAll('input[name="radio"]');
     radioInputs.forEach(input => {
@@ -42,14 +37,12 @@ function setRadioInput(language) {
     });
 }
 
-// Add event listeners to the radio inputs
 document.querySelectorAll('input[name="radio"]').forEach(input => {
     input.addEventListener('change', function() {
         switchLanguage(this.value);
     });
 });
 
-// On page load, set the language based on saved choice or default to English
 window.onload = function() {
     const savedLanguage = localStorage.getItem("language") || "en";
     switchLanguage(savedLanguage);
