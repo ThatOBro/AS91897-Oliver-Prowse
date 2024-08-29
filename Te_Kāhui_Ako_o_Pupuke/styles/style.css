@@ -1,0 +1,345 @@
+body {
+  margin: 0;
+  background-color: #fafafa;
+}
+
+#container {
+  max-width: 1500px;
+  height: fit-content;
+  margin: 0 auto;
+  font-family: Arial, Helvetica, sans-serif;
+  box-shadow: 0px 0px 3px #ddd;
+  background-color: #fff;
+  color: rgba(51, 65, 85, 1);
+  border-radius: 10px;
+}
+
+
+
+/* Header Styling */
+
+header {
+  height: fit-content;
+  border-radius: 10px;
+  box-shadow: 0px 0px 3px #ddd;
+  background-color: #fff;
+}
+
+nav {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 20px;
+  background-color: #eee;
+  border-radius: 10px 10px 0 0;
+  position: relative;
+}
+
+nav a {
+  width: 33.33%;
+  text-align: center;
+  font-size: 2em;
+  text-decoration: none;
+  margin: 0 0 0 0;
+  padding: 10px 0 10px 0;
+  background-color: #eee;
+  color: rgba(51, 65, 85, 1);
+  border-radius:  10px;
+}
+
+nav #current_page1::before {
+  content: "";
+  position: absolute;
+  bottom: 0%;
+  left: 33.33%;
+  height: 20px;
+  width: 20px;
+  border-radius: 0 0 0 10px;
+  background-color: #eee;
+  box-shadow: -5px 5px 0px #fff;
+}
+
+nav #current_page2::before {
+  content: "";
+  position: absolute;
+  bottom: 0%;
+  left: 66.66%;
+  height: 20px;
+  width: 20px;
+  border-radius: 0 0 0 10px;
+  background-color: #eee;
+  box-shadow: -5px 5px 0px #fff;
+}
+
+nav #current_page2::after {
+  content: "";
+  position: absolute;
+  bottom: 0%;
+  left: 33.33%;
+  height: 20px;
+  width: 20px;
+  transform: translateX(-20px);
+  border-radius: 0 0 10px 0;
+  background-color: #eee;
+  box-shadow: 5px 5px 0px #fff;
+}
+
+nav #current_page3::after {
+  content: "";
+  position: absolute;
+  bottom: 0%;
+  left: 66.66%;
+  height: 20px;
+  width: 20px;
+  transform: translateX(-20px);
+  border-radius: 0 0 10px 0;
+  background-color: #eee;
+  box-shadow: 5px 5px 0px #fff;
+}
+
+#current_page1, #current_page2, #current_page3 {
+  border-radius: 10px 10px 0 0;
+  margin-top: 0px;
+  background-color: #fff;
+  font-weight: 600;
+}
+
+#under_nav {
+  height: 90px;
+}
+
+img {
+  width: 100px;
+  float: left;
+  margin: 10px 20px 0;
+}
+
+#title {
+  display: flex;
+  flex-direction: column;
+  float: left;
+  margin: 20px 0 0 0;
+}
+
+#title h1 {
+  font-weight: 600;
+  font-size: 2em;
+  color: rgba(51, 65, 85, 1);
+  margin: 0px;
+}
+
+#title a {
+  text-decoration: none;
+}
+
+#title h3 {
+  font-weight: 50;
+  font-size: 1em;
+  color: rgb(85 169 183);
+  margin: 0px;
+}
+
+/* From Uiverse.io by Nilsobn */ 
+.radio-inputs {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 10px;
+  background-color: #eee;
+  box-sizing: border-box;
+  padding: 0.25rem;
+  width: 250px;
+  font-size: 14px;
+  height: 40px;
+  float: right;
+  margin: 28px 20px 0 28px;
+}
+
+.radio-inputs .radio {
+  flex: 1 1 auto;
+  text-align: center;
+}
+
+.radio-inputs .radio input {
+  display: none;
+}
+
+.radio-inputs .radio .name {
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  border: none;
+  padding: 0.5rem 0;
+  color: rgba(51, 65, 85, 1);
+  transition: all 0.15s ease-in-out;
+}
+
+.radio-inputs .radio input:checked + .name {
+  background-color: #fff;
+  font-weight: 600;
+}
+
+
+
+/* Main Styling */
+
+main {
+  min-height: 200px;
+}
+
+
+
+/* Footer  Styling */
+
+footer {
+  grid-template-columns: auto auto auto;
+  height: 100px;
+  background-color: #000;
+  border-radius: 0 0 10px 10px;
+  overflow: hidden;
+  position: relative;
+}
+
+#footer_img {
+  object-fit: none;
+  width: 120%;
+  height: 120%;
+  transform: translate(-10%, -80%);
+  opacity: 50%;
+  filter: blur(2px);
+}
+
+footer p {
+  color: #ddd;
+  font-size: 14px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 5px;
+  width: fit-content;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+footer #copyright {
+  transform: translate(-50%, 10%);
+}
+
+footer h2 {
+  color: #ddd;
+  width: 80%;
+  font-size: 16px;
+  text-align: center;
+  margin: 0;
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+}
+
+footer a {
+  text-decoration: none;
+}
+
+#button-1 {
+  top: 50%;
+  left: 50%;
+  transform: translate(150%, -10%);
+}
+
+#button-2 {
+  top: 50%;
+  left: 50%;
+  transform: translate(-250%, -110%);
+}
+
+/* From Uiverse.io by gharsh11032000 */ 
+.animated-button {
+  z-index: 1000;
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 12px 36px;
+  border: 0px solid;
+  border-color: transparent;
+  font-size: 14px;
+  background-color: transparent;
+  border-radius: 100px;
+  font-weight: 600;
+  color: #1E8E96;
+  box-shadow: 0 0 0 2px #1E8E96;
+  cursor: pointer;
+  overflow: hidden;
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+  width: 77.05px;
+}
+
+.animated-button svg {
+  position: absolute;
+  width: 24px;
+  fill: #1E8E96;
+  z-index: 9;
+  transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.animated-button .arr-1 {
+  right: 16px;
+}
+
+.animated-button .arr-2 {
+  left: -25%;
+}
+
+.animated-button .circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 20px;
+  height: 20px;
+  background-color: #eee;
+  border-radius: 10px;
+  opacity: 0;
+  transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.animated-button .text {
+  position: relative;
+  z-index: 1;
+  transform: translateX(-12px);
+  transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.animated-button:hover {
+  box-shadow: 0 0 0 12px transparent;
+  color: rgba(51, 65, 85, 1);
+  border-radius: 10px;
+}
+
+.animated-button:hover .arr-1 {
+  right: -25%;
+}
+
+.animated-button:hover .arr-2 {
+  left: 16px;
+}
+
+.animated-button:hover .text {
+  transform: translateX(12px);
+}
+
+.animated-button:hover svg {
+  fill: rgba(51, 65, 85, 1);
+}
+
+.animated-button:active {
+  box-shadow: 0 0 0 4px #1E8E96;
+}
+
+.animated-button:hover .circle {
+  width: 220px;
+  height: 220px;
+  opacity: 1;
+}
