@@ -188,7 +188,191 @@ main {
   min-height: 200px;
 }
 
+#hero_image {
+  height: 600px;
+  margin: 0;
+}
 
+#hero_image img {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+}
+
+#hero_image h1 {
+  color: #fff;
+  font-size: 4em;
+  font-weight: 600;
+  text-align: center;
+  position: absolute;
+  top: 11%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+}
+
+#hero_image h2 {
+  color: #fff;
+  font-size: 2.5em;
+  font-weight: 300;
+  line-height: 1.8;
+  text-align: center;
+  position: absolute;
+  top: 18%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+}
+
+#content {
+  height: fit-content;
+  margin: 30px 30px 0 30px;
+  padding: 0 30px 0 30px;
+  border-radius: 10px;
+  background-image: linear-gradient(#EDF6F5, #fff);
+  position: relative;
+}
+
+#middle_text {
+  text-align: center;
+}
+
+#middle_text h1 {
+  font-size: 3em;
+  font-weight: 600;
+  color: rgba(51, 65, 85, 1);
+  padding: 50px 0 20px 0;
+}
+
+#middle_text h2 {
+  font-size: 2.5em;
+  font-weight: 300;
+  line-height: 1.6;
+  color: rgba(51, 65, 85, 1);
+  padding: 0 0 50px 0;
+}
+
+#bottom_tiles {
+  height: 1000px;
+  margin: 30px 0 30px 0;
+  position: relative;
+}
+
+#bottom_tiles img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  margin: 0;
+}
+
+#bottom_tiles h1 {
+  font-size: 3em;
+  font-weight: 300;
+  color: rgba(51, 65, 85, 1);
+  padding: 20px 0 20px 0;
+  position: absolute;
+  margin: 0;
+  padding: 0;
+}
+
+#bottom_tiles a {
+  text-decoration: none;
+  font-weight: 600;
+  color: rgba(51, 65, 85, 1);
+  padding: 20px 0 20px 0;
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  font-size: 1.5em;
+  background-color: #EDF6F5;
+  padding: 10px 20px 10px 20px;
+  border-radius: 10px;
+}
+
+.tiles {
+  border-radius: 10px;
+  position: absolute;
+}
+
+#tile1 {
+  width: 400px;
+  height: 450px;
+  top: 0%;
+  left: 50%;
+  transform: translateX(-550px);
+}
+
+#tile1 h1 {
+  font-size: 2.5em;
+  color: #EDF6F5;
+  top: 5%;
+  left: 0%;
+  transform: translateX(7.5%);
+}
+
+#tile1 a {
+  top: 85%;
+  left: 50%;
+}
+
+#tile2 {
+  width: 600px;
+  height: 300px;
+  top: 0%;
+  left: 50%;
+  transform: translateX(-50px);
+}
+
+#tile2 h1 {
+  top: 5%;
+  left: 45%;
+}
+
+#tile2 a {
+  top: 75%;
+  left: 5%;
+}
+
+#tile3 {
+  width: 400px;
+  height: 450px;
+  top: 40%;
+  left: 50%;
+  transform: translateX(150px);
+}
+
+#tile3 h1 {
+  font-size: 2.5em;
+  color: #EDF6F5;
+  top: 5%;
+  left: 0%;
+  transform: translateX(50%);
+}
+
+#tile3 a {
+  top: 85%;
+  left: 50%;
+}
+
+#tile4 {
+  width: 600px;
+  height: 300px;
+  top: 40%;
+  left: 50%;
+  transform: translate(-550px, 150px);
+}
+
+#tile4 h1 {
+  top: 5%;
+  left: 0%;
+  transform: translateX(37%);
+}
+
+#tile4 a {
+  top: 75%;
+  left: 5%;
+}
 
 /* Footer  Styling */
 
