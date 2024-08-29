@@ -245,13 +245,13 @@ footer a {
 #button-1 {
   top: 50%;
   left: 50%;
-  transform: translate(150%, -10%);
+  transform: translate(130%, -10%);
 }
 
 #button-2 {
   top: 50%;
   left: 50%;
-  transform: translate(-250%, -110%);
+  transform: translate(-230%, -110%);
 }
 
 /* From Uiverse.io by gharsh11032000 */ 
@@ -273,7 +273,7 @@ footer a {
   cursor: pointer;
   overflow: hidden;
   transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
-  width: 77.05px;
+  width: 100px;
 }
 
 .animated-button svg {
