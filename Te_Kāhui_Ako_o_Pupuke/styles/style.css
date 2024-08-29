@@ -227,6 +227,23 @@ main {
   width: 800px;
 }
 
+#source_content h1 {
+  font-size: 3em;
+  font-weight: 600;
+  color: rgba(51, 65, 85, 1);
+  padding: 30px 0 20px 0;
+  text-align: center;
+}
+
+#source_content ul {
+  padding: 10px 0 50px 60px;
+}
+
+#source_content a {
+  color: rgb(85 169 183);
+  font-size: 1.5em;
+}
+
 #content {
   height: fit-content;
   margin: 30px 30px 0 30px;
