@@ -4,26 +4,43 @@ const translations = {
         page2: "Pupuke & Rangitoto",
         page3: "Ngāti Pāoa & Waitematā",
         subtitle: "Satellite Site",
-        contactUs: "Contact Us",
-        sourceInfo: "Source Info"
+        hero_text1: "Our Vision",
+        hero_text2: "To create a rich, collaborative culture that unites kura (schools), pouako (teachers), ākonga (students) and whānau to work collectively on common goals for the benefit of all.",
+        contact_us: "Contact Us",
+        source_info: "Source Info"
     },
     mi: {
         page1: "Whārangi Kāinga",
         page2: "Pupuke me Rangitoto",
         page3: "Ngāti Pāoa me Waitematā",
         subtitle: "Paetukutuku ā-Whetū",
-        contactUs: "Whakapā Mai",
-        sourceInfo: "Puna Pārongo"
+        hero_text1: "To Tatou Matakite",
+        hero_text2: "Ki te hanga i tetahi ahurea whai kiko, mahi tahi e whakakotahi ai nga kura, nga kaiako, nga tauira me nga whanau ki te mahi tahi i runga i nga whaainga kotahi hei painga mo te katoa.",
+        contact_us: "Whakapā Mai",
+        source_info: "Puna Pārongo"
     }
 };
 
 function switchLanguage(language) {
-    document.querySelector('.page1').textContent = translations[language].page1;
-    document.querySelector('.page2').textContent = translations[language].page2;
-    document.querySelector('.page3').textContent = translations[language].page3;
-    document.querySelector('.subtitle').textContent = translations[language].subtitle;
-    document.querySelector('#button-1 .text').textContent = translations[language].contactUs;
-    document.querySelector('#button-2 .text').textContent = translations[language].sourceInfo;
+    const elementsToTranslate = [
+        { selector: '.page1', translationKey: 'page1' },
+        { selector: '.page2', translationKey: 'page2' },
+        { selector: '.page3', translationKey: 'page3' },
+        { selector: '.subtitle', translationKey: 'subtitle' },
+        { selector: '.hero_text1', translationKey: 'hero_text1' },
+        { selector: '.hero_text2', translationKey: 'hero_text2' },
+        { selector: '#button-1 .text', translationKey: 'contact_us' },
+        { selector: '#button-2 .text', translationKey: 'source_info' },
+    ];
+
+    elementsToTranslate.forEach(item => {
+        const element = document.querySelector(item.selector);
+        if (element) {
+            element.textContent = translations[language][item.translationKey];
+        } else {
+            console.log(`Element with selector '${item.selector}' not found.`);
+        }
+    });
 
     localStorage.setItem("language", language);
 }
